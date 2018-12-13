@@ -1,0 +1,118 @@
+.coverages-modal{
+    width: 464px;
+    position: relative;
+}
+
+.coverages-modal .cross-container{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.coverages-modal .cross-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.coverages-modal .main-container{
+    padding: 40px;
+}
+
+.coverages-modal .main-container #coveragesCarousel{
+    min-height: 300px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-control-prev,
+.coverages-modal .main-container #coveragesCarousel .carousel-control-next{
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+    top: 24%;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-control-prev .carousel-control-prev-icon{
+    background-image: url("/assets/index/left-arrow.svg");
+    left: 25px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-control-next .carousel-control-next-icon{
+    background-image: url("/assets/index/right-arrow.svg");
+    right: 25px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-indicators{
+    bottom: 0;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-indicators li{
+    background-color: rgba(51, 51, 51, 0.38);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-indicators li.active{
+    background-color: rgba(5, 97, 255, 1);
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-item h2{
+    font-size: 16.5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 20px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-item .img-container {
+    text-align: center;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-item .img-container img {
+    width: 80px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-item label{
+    font-size: 14.4px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.coverages-modal .main-container #coveragesCarousel .carousel-item p{
+    font-size: 14.6px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    font-family: 'Lato', sans-serif !important;
+}
+
+@media(max-width: 645px){
+    .coverages-modal{
+        width: 100%;
+    }
+
+    .coverages-modal .main-container {
+        padding: 15px;
+    }
+
+    .coverages-modal .main-container #coveragesCarousel {
+        min-height: 330px;
+    }
+
+    .cdk-overlay-pane{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .coverages-modal[_ngcontent-c6] .cross-container[_ngcontent-c6]{
+        right: 0;
+        top: 0;
+    }
+
+    .coverages-modal .main-container #coveragesCarousel{
+        min-height: 350px
+    }
+}

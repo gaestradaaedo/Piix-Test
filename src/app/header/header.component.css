@@ -1,0 +1,25 @@
+.mat-toolbar{
+    background-color: #fff;
+    padding-left: 18px;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    max-width: 100%;
+    border-bottom: solid 1px #eaeaea;
+}
+
+.mat-toolbar .logo{
+    height: auto;
+    width: 31px;
+}
+
+.mat-toolbar .example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar .menu-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}

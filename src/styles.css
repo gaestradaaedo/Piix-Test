@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.mat-dialog-container{
+    border-radius: 10px !important;
+}
+
+.clear{
+    clear: both;
+}
+
+@media(max-width: 525px){
+    .cdk-overlay-pane{
+        max-width: 100% !important;
+    }
+}

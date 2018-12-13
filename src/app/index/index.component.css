@@ -1,0 +1,576 @@
+#landing-page{
+    margin-top: 52px;
+}
+
+#landing-page .main-background-container{
+    width: 100%;
+    height: 758px;
+    background-image: url("/assets/index/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+#landing-page .main-background-container .logo-container{
+    margin: 0 auto;
+    padding-top: 250px;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+}
+
+#landing-page .main-background-container .logo-container img{
+    max-width: 290px;
+}
+
+#landing-page .main-background-container h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.3px;
+}
+
+#landing-page .main-background-container .triangle{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#landing-page .main-container{
+    padding-top: 180px;
+}
+
+#landing-page .main-container h2{
+    font-size: 33.2px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#landing-page .main-container .product-container .content-container p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16.7px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Lato', sans-serif !important;
+    letter-spacing: 0.5px;
+}
+
+#landing-page .main-container .product-container .content-container .values-container{
+    text-align: center;
+}
+
+#landing-page .main-container .product-container .content-container .values-container ul{
+    list-style: none;
+}
+
+#landing-page .main-container .product-container .content-container .values-container ul li{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16.7px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 0.5px;
+}
+
+#landing-page .main-container .product-container .content-container .values-container ul li::before {
+    content: "•";
+    color: #0061ff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 30px;
+}
+
+#landing-page .main-container .benefits-container{
+    padding-top: 210px;
+}
+
+#landing-page .main-container .benefits-container .cards-container{
+    box-shadow: 0 2px 25px -7px rgba(0, 0, 0, 0.27);
+    width: 100%;
+    height: 636px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 70px;
+}
+
+#landing-page .main-container .benefits-container .cards-container h2{
+    margin-bottom: 30px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel {
+    min-height: 460px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev,
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next{
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+    top: 24%;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev-icon{
+    background-image: url("/assets/index/left-arrow.svg");
+    left: 25px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next-icon{
+    background-image: url("/assets/index/right-arrow.svg");
+    right: 25px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-indicators{
+    bottom: 0;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-indicators li{
+    background-color: #333333;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-indicators li.active{
+    background-color: rgba(5, 97, 255, 1);
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item img {
+    max-width: 300px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item h3{
+    font-size: 23.4px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+#landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item p{
+    font-size: 16.7px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: justify;
+    font-family: 'Lato', sans-serif !important;
+    letter-spacing: 0.5px;
+}
+
+#landing-page .main-container .benefits-container .coverages-container .icon-container{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#landing-page .main-container .benefits-container .coverages-container .icon-container img{
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+
+#landing-page .main-container .benefits-container .coverages-container .icon-container .icon-name-container{
+  border-radius: 4px;
+  background-color: #333333;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+
+#landing-page .main-container .benefits-container .coverages-container .icon-container .icon-name-container.show{
+    display: block;
+}
+
+#landing-page .main-container .benefits-container .coverages-container .icon-container .icon-name-container label{
+    font-size: 12.5px;
+    font-family: 'Lato', sans-serif !important;
+    margin-bottom: 0;
+}
+
+#landing-page .main-container .contact-container{
+    margin-top: 100px;
+}
+
+#landing-page .main-container .contact-container .content-container{
+    text-align: center;
+}
+
+#landing-page .main-container .contact-container .content-container h4{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16.7px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 30px;
+}
+
+#landing-page .main-container .contact-container .content-container input,
+#landing-page .main-container .contact-container .content-container textarea{
+    display: block;
+    border: solid 1px #0061ff;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 480px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+#landing-page .main-container .contact-container .content-container textarea{
+    height: 230px;
+    max-height: 230px;
+    min-height: 150px;
+}
+
+#landing-page .main-container .contact-container .content-container button{
+    color: #0061ff;
+    font-size: 13.7px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+#landing-page .main-container .download-container{
+    margin-top: 100px;
+}
+
+#landing-page .main-container .download-container .content-container{
+    text-align: center;
+}
+
+#landing-page .main-container .download-container .content-container img{
+    width: 196px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+}
+
+#landing-page .main-container .download-container .content-container button{
+    background-color: #0061ff;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 24px;
+    letter-spacing: 1.3px;
+    font-size: 13.7px;
+    font-weight: bold;
+}
+
+@media(max-width: 1199px){
+    #landing-page .main-background-container h3{
+        font-size: 13.7px;
+    }
+
+    #landing-page .main-background-container .logo-container{
+        padding-top: 350px;
+    }
+    
+    #landing-page .main-background-container .logo-container img{
+        max-width: 324px;
+    }
+
+    #landing-page .main-container h2{
+        font-size: 23.4px;
+    }
+
+    #landing-page .main-container .product-container .content-container p,
+    #landing-page .main-container .product-container .content-container .values-container ul li,
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item p,
+    #landing-page .main-container .contact-container .content-container h4{
+        font-size: 14.6px;
+        letter-spacing: 0.3px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container{
+        height: 550px;
+        margin-top: 0;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel{
+        min-height: 415px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev{
+        left: 0;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next{
+        right: 0;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item img{
+        max-width: 270px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item h3{
+        font-size: 19.5px;
+    }
+
+    #landing-page .main-container .benefits-container .coverages-container .icon-container img{
+        width: 80px;
+    }
+
+    #landing-page .main-container .download-container .content-container img{
+        width: 157px;
+    }
+}
+
+@media(max-width: 995px){
+    #landing-page .main-background-container{
+        height: 972px;
+    }
+
+    #landing-page .main-container,
+    #landing-page .main-container .benefits-container{
+        padding-top: 120px;
+    }
+
+    #landing-page .main-container h2{
+        font-size: 33.2px;
+    }
+
+    #landing-page .main-container .product-container .content-container p,
+    #landing-page .main-container .product-container .content-container .values-container ul li,
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item p,
+    #landing-page .main-container .contact-container .content-container h4{
+        font-size: 16.7px;
+        letter-spacing: 0.5px;
+    }
+
+    #landing-page .main-container .product-container .content-container p{
+        margin-bottom: 110px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    #landing-page .main-container .product-container .content-container .values-container ul li::before{
+        font-size: 21px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container{
+        box-shadow: none;
+    }
+
+    #landing-page .main-container .download-container .content-container img{
+        width: 196px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-indicators{
+        display: none;
+    }
+
+    #landing-page .main-container .benefits-container .mobile-container{
+        margin-top: -40px;
+    }
+
+    #landing-page .main-container .benefits-container .mobile-container h4{
+        font-size: 16.5px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: 'Lato', sans-serif !important;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    #landing-page .main-container .benefits-container .swiper-main-container{
+        padding: 0;
+    }
+
+    #landing-page .main-container .benefits-container .swiper-container{
+        width: 100%;
+        height: 190px;
+    }
+    
+    #landing-page .main-container .benefits-container .swiper-container .swiper-slide{
+        max-width: 120px;
+        text-align: center;
+    }
+    
+    #landing-page .main-container .benefits-container .swiper-container .swiper-slide img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #landing-page .main-container .benefits-container .swiper-container .swiper-slide label{
+        font-family: 'Lato', sans-serif !important;
+        letter-spacing: 0.4px;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12.5px;
+        margin-top: 5px;
+    }
+
+    :host>>>#landing-page .main-container .benefits-container .swiper-container .swiper-pagination-bullet{
+        background-color: #333;
+        opacity: 1;
+    }
+
+    :host>>>#landing-page .main-container .benefits-container .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: #0561ff;
+        opacity: 1;
+    }
+
+    #landing-page .main-container .contact-container{
+        margin-top: 100px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .container{
+        max-width: 100%;
+    }
+
+    #landing-page .main-background-container{
+        height: 516px;
+    }
+
+    #landing-page .main-background-container .logo-container{
+        padding-top: 200px;
+    }
+
+    #landing-page .main-background-container .logo-container img{
+        max-width: 207px;
+    }
+
+    #landing-page .main-container{
+        padding-top: 80px;
+    }
+
+    #landing-page .main-container h2{
+        font-size: 19.5px;
+    }
+
+    #landing-page .main-container .product-container .content-container p,
+    #landing-page .main-container .product-container .content-container .values-container ul li,
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item p,
+    #landing-page .main-container .contact-container .content-container h4{
+        font-size: 14.6px;
+        letter-spacing: 0.3px;
+    }
+
+    #landing-page .main-container .product-container,
+    #landing-page .main-container .benefits-container .cards-container{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    #landing-page .main-container .product-container .content-container p{
+        margin-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #landing-page .main-container .product-container .content-container .values-container ul{
+        padding-left: 0;
+    }
+    
+    #landing-page .main-container .benefits-container{
+        padding-top: 40px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 370px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel{
+        min-height: 280px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item img{
+        max-width: 161px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-item h3{
+        margin-bottom: 20px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev, 
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next{
+        top: 50px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev{
+        left: 40px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next{
+        right: 40px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev-icon,
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next-icon{
+        width: 12px;
+        height: 12px;
+    }
+
+    #landing-page .main-container .benefits-container .mobile-container {
+        margin-top: 20px;
+    }
+
+    #landing-page .main-container .download-container .content-container img{
+        width: 101px;
+    }
+}
+
+@media(max-width: 575px){
+    #landing-page .main-background-container .logo-container img{
+        max-width: 162px;
+    }
+
+    #landing-page .main-container .benefits-container .mobile-container{
+        margin-top: 40px;
+    }
+
+    #landing-page .main-container .contact-container{
+        margin-top: 70px;
+    }
+
+    #landing-page .main-container .contact-container .content-container input, 
+    #landing-page .main-container .contact-container .content-container textarea{
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 380px){
+    #landing-page .main-container .benefits-container .swiper-container .swiper-slide img{
+        width: 70px;
+        height: 70px;
+    }
+
+    #landing-page .main-container .benefits-container .swiper-container .swiper-slide label{
+        font-size: 11.5px;
+    }
+}
+
+@media(max-width: 325px){
+    #landing-page .main-container .benefits-container .cards-container{
+        height: 440px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-prev{
+        left: 10px;
+    }
+
+    #landing-page .main-container .benefits-container .cards-container #cardsCarousel .carousel-control-next{
+        right: 10px;
+    }
+
+    :host >>> #landing-page .main-container .benefits-container .swiper-container .swiper-pagination-bullet{
+        width: 6px;
+        height: 6px;
+    }
+}

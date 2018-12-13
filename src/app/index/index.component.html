@@ -1,0 +1,148 @@
+<app-header></app-header>
+<div id="landing-page">
+  <div class="main-background-container">
+    <div class="logo-container">
+      <img src="../assets/index/piix-logotipo.svg" alt="Piix">
+    </div>
+    <h3>Consultar planes y seguros</h3>
+    <img class="triangle" src="../assets/index/down-triangle.svg" alt="Consulta planes y seguros">
+  </div>
+  <div class="main-container container">
+    <div class="product-container row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 content-container">
+        <h2>Definición de producto</h2>
+        <p>
+          Se muestra seguro contratado por el usuario.Se muestra seguro contratado por el usuario. Consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Se muestra seguro 
+          contratado por el usuario. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+          enim ad minim veniam. 
+        </p>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 content-container">
+        <h2>Propuesta de valor</h2>
+        <div class="values-container d-none d-xl-block d-lg-block">
+          <ul>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <li>Bullet point 4</li>
+            <li>Bullet point 5</li>
+            <li>Bullet point 6</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="values-container d-lg-none col-md-6 col-sm-6 col-6">
+            <ul>
+              <li>Bullet point 1</li>
+              <li>Bullet point 2</li>
+              <li>Bullet point 3</li>
+            </ul>
+          </div>
+          <div class="values-container d-lg-none col-md-6 col-sm-6 col-6">
+            <ul>
+              <li>Bullet point 4</li>
+              <li>Bullet point 5</li>
+              <li>Bullet point 6</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="benefits-container row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 content-container">
+        <div class="container">
+          <div class="cards-container">
+            <h2>Ramo al que pertenece</h2>
+            <div id="cardsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#cardsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#cardsCarousel" data-slide-to="1"></li>
+                <li data-target="#cardsCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../assets/index/gold-card.png" alt="Tarjeta Dorada">
+                  <h3>Superior</h3>
+                  <p>
+                    Se muestra seguro contratado por el usuario.Se muestra seguro contratado por el usuario. Consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/index/gold-card.png" alt="Tarjeta Dorada">
+                  <h3>Superior</h3>
+                  <p>
+                    Se muestra seguro contratado por el usuario.Se muestra seguro contratado por el usuario. Consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/index/gold-card.png" alt="Tarjeta Dorada">
+                  <h3>Superior</h3>
+                  <p>
+                    Se muestra seguro contratado por el usuario.Se muestra seguro contratado por el usuario. Consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </p>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#cardsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#cardsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-xl-block d-lg-block col-xl-6 col-lg-6 content-container">
+        <div class="container">
+          <div class="coverages-container row">
+            <div class="col-xl-3 col-lg-3 icon-container" *ngFor="let coverage of coverages; let i = index">
+              <img src="{{coverage.imageUrl}}" alt="{{coverage.name}}" (mouseenter)="imageAction($event, true)" 
+              (mouseleave)="imageAction($event, false)" (click)="openCoveragesModal(i)">
+              <div class="icon-name-container">
+                <label>{{coverage.name}}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-none col-md-12 col-sm-12 col-12 content-container swiper-main-container">
+        <div class="mobile-container">
+          <h4 class="covers-subtitle">Coberturas y asistencias</h4>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" *ngFor="let coverage of coverages; let i = index">
+                <img src="{{coverage.imageUrl}}" alt="{{coverage.name}}" (click)="openCoveragesModal(i)">
+                <div class="icon-name-container">
+                  <label>{{coverage.name}}</label>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content-container">
+        <h2>Únete</h2>
+        <h4>Sé parte de la gran red de seguros</h4>
+        <input type="text" placeholder="Correo electrónico" />
+        <textarea placeholder="Redacta tu mensaje"></textarea>
+        <button>Enviar</button>
+      </div>
+    </div>
+    <div class="download-container row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 content-container">
+        <img src="../assets/index/piix-logo.svg" alt="Piix">
+        <button>Descargar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
